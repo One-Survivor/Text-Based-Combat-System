@@ -3,7 +3,6 @@
 #include "Character.h"
 #include "RNG.h"
 
-
 void attack(Character defender) {
 	dealDamage(rollRange(2, 3), defender);
 };
@@ -17,7 +16,7 @@ void heal(Character friendly) {
 	friendly.changeHealth(-3);
 }
 
-void fireRocket(vector <Character> defenders, Character robot) {
+void fireRocket(std::vector <Character> defenders, Character robot) {
 	for (Character i : defenders) {
 		dealDamage(rollRange(3, 4), i);
 		robot.rocketCount = robot.rocketCount - 1;

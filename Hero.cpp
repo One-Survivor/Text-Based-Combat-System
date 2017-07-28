@@ -1,22 +1,18 @@
 #include <iostream>
 #include <string>
 #include "Header.h"
-using namespace std;
 
 //Character
-string name;
+std::string name;
 bool leave = true;
-string species = "/0";
-string type;
+std::string species = "/0";
+std::string type;
 bool psionic;
-string psionicType = "/0";
-string techType = "/0";
+std::string psionicType = "/0";
+std::string techType = "/0";
 
 //Stats
 int health;
-string ability1;
-string ability2;
-string ability3;
 //Psionic Managment
 int focus;
 int will;

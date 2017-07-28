@@ -2,6 +2,5 @@
 #include <vector>
 #include "Character.h"
 
-using namespace std;
-void clearCharVector(vector <Character>);
+void clearCharVector(std::vector <Character>);
 

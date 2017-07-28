@@ -23,8 +23,8 @@ Character::Character() {
 
 }
 
-Character::Character(string Type, int Health, int MaxHealth, bool Hero, bool Badguy, int Reflexes, int RocketCount) {
-	string type =Type;
+Character::Character(std :: string Type, int Health, int MaxHealth, bool Hero, bool Badguy, int Reflexes, int RocketCount) {
+	std::string type =Type;
 	int health = Health;
 	int maxHealth = MaxHealth;
 	bool hero = Hero;

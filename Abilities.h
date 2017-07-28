@@ -1,8 +1,9 @@
 #pragma once
-#include "Character.h"
+#include <vector>
+
+class Character;
+class vector;
 void attack(Character);
 void shield(Character);
 void heal(Character);
-void fireRocket(vector <Character>, Character);
-void moveObject(Character, Character);
-
+void fireRocket(std::vector <Character>, Character);

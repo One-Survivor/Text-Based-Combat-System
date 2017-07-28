@@ -1,7 +1,5 @@
 #pragma once
 #include <string>
-#include <vector>
-using namespace std;
 
 class Character {
 	private:
@@ -10,11 +8,11 @@ class Character {
 		bool stillAlive;
 		
 	public:
-		string type;
+		std::string type;
 		bool hero;
 		bool badguy;
 		int strength;
-		string healthState;
+		std::string healthState;
 		int reflexes;
 		int rocketCount;
 		int shieldTimer;
@@ -25,5 +23,5 @@ class Character {
 		int getMaxHealth();
 
 		Character();
-		Character(string, int, int, bool, bool, int, int);
+		Character(std::string, int, int, bool, bool, int, int);
 };

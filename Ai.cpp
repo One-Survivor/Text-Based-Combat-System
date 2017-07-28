@@ -1,15 +1,14 @@
-
+#include "Character.h"
 #include "Combat.h"
 #include "Abilities.h"
 #include "Ai.h"
 #include "RNG.h"
-using namespace std;
 
 bool healRequired;
 int rHolder;
 
 //Migrate To Tools?//
-string healState[] {
+std::string healState[] {
 	"FullHealth",
 	"LowHealth",
 	"SliverHealth"

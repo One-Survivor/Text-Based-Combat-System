@@ -3,8 +3,6 @@
 #include <ctime> 
 #include <cstdlib>
 
-using namespace std;
-
 int roll(int num) {
 	srand((unsigned)time(0));
 	int random_integer;
