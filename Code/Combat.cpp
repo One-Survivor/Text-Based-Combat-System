@@ -2,9 +2,7 @@
 #include "Character.h"
 #include "Abilities.h"
 #include "RNG.h"
-#include "Tools.h"
 #include "Ai.h"
-#include <vector>
 #include <iostream>
 #include <string>
 
@@ -51,7 +49,7 @@ void findLargeInArray(int place, int tieholder, int anArray[]) {
 //Input the place of the character, and retrieves the Character.//
 void getCharacterOrder(int place, Character fighterArray[]) {
 	if (place = 0) {
-		combatOrder.push_back(fighterArray[0]);
+		combatOrder.puah_back(fighterArray[0]);
 	}
 	else if (place = 1) {
 		combatOrder.push_back(fighterArray[1]);
@@ -215,9 +213,6 @@ void resolution() {
 	}
 
 	//Clearing Vectors//
-	clearCharVector(goodGuys);
-	clearCharVector(badGuys);
-	clearCharVector(combatOrder);
 }
 
 void startCombat(Character hero, Character minion, Character hostile1, Character hostile2, Character hostile3, Character hostile4) {

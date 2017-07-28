@@ -16,7 +16,7 @@ void heal(Character friendly) {
 	friendly.changeHealth(-3);
 }
 
-void fireRocket(std::vector <Character> defenders, Character robot) {
+void fireRocket(Character defenders[], Character robot) {
 	for (Character i : defenders) {
 		dealDamage(rollRange(3, 4), i);
 		robot.rocketCount = robot.rocketCount - 1;

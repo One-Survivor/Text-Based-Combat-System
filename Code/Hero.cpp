@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include "Header.h"
 
 //Character
 std::string name;

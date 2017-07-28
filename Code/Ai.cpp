@@ -14,11 +14,10 @@ std::string healState[] {
 	"SliverHealth"
 };
 
-std::vector <Character> friendly;
-std::vector <Character> hostile;
-std::vector <Character> healChoices;
-std::vector <Character> shieldChoices;
-
+Character friendly[4];
+Character hostile[4];
+Character healChoices[4];
+Character shieldChoices[4];
 
 void getFriendlyArray(Character fighter) {
 	//Getting friendly array//
@@ -106,11 +105,6 @@ void healerAi(Character healer) {
 		attack(targetOptions[random(targets)]);
 	}
 	healRequired = true;
-	clearCharVector(friendly);
-	clearCharVector(hostile);
-	clearCharVector(healChoices);
-	clearCharVector(shieldChoices);
-	clearCharVector(targetOptions);
 }
 
 void rocketBot(Character bot) {
@@ -129,8 +123,5 @@ void rocketBot(Character bot) {
 		}
 		attack(targetOptions[random(targets)]);
 	}
-	clearCharVector(friendly);
-	clearCharVector(hostile);
-	clearCharVector(targetOptions);
 	rHolder = 0;
 }

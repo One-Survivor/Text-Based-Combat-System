@@ -1,12 +1,11 @@
 #pragma once
 #include <string>
-#include <vector>
 
 class Character;
 
 std :: string healState[];
-void healerCheck(std::vector <Character>);
+void healerCheck(Character[]);
 void dealDamage(int, Character);
 void healthStateHandling(Character fighter);
-std::vector <Character> targetOptions;
+Character targetOptions[4];
 //enum healthState { FullHealth, LowHealth, SliverHealth };
